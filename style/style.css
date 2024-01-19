@@ -1,0 +1,145 @@
+/* header styles */
+header{
+    padding: 50px 100px;
+}
+
+.header-title{
+    color: #474747;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav > ul{
+    display: flex;
+    align-items: center;
+    /* gap: 50px; */
+}
+nav li{
+    list-style: none;
+    margin-right: 50px;
+}
+nav li a{
+    text-decoration: none;
+    color: #474747;
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+/* banner style */
+.banner{
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    background-image: url(../images//Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.banner-title{
+    color: #474747;
+    font-size: 50px;
+    font-weight: 900;
+}
+.banner-content{
+    color: #474747;
+    font-size: 17px;
+    font-weight: 600;
+}
+.btn-primary{
+    color: #fff;
+    background-color: rgb(206, 23, 115);
+    border: none;
+    border-radius: 50px;
+    font-size: 1.25rem;
+    padding: 10px 40px;
+}
+
+/* logo style */
+.logo-item{
+    margin-top: 50px;
+}
+.logo{
+    display: flex;
+    margin-top: 20px;
+    /* margin-bottom: 50px; */
+    width: 70%;
+    margin-left: 150px;
+}
+.logo img{
+    padding: 30px;
+    
+}
+hr{
+    width: 90%;
+}
+
+/* card style */
+.card-header{
+    text-align: center;
+    margin-top: 150px;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 60%;
+    padding: 0px 125px;
+}
+.card{
+    margin: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.card-btn{
+    text-align: right;
+    padding-right: 170px;
+}
+
+/* respondve media queries */
+
+/* mobile devices */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+        flex-direction: column;
+    }
+    
+    nav ul{
+        flex-direction: column;
+        justify-content: space-between;
+
+
+    }
+    nav li{
+        margin-right: 0px;
+    }
+    .banner{
+        flex-direction: column;
+        background-size: 100%;
+        background-position: bottom;
+        gap: 50px;
+    }
+    .banner-title{
+        color: #d31010;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .banner-images{
+        width: 100%;
+    }
+
+    .logo{
+        flex-direction: column;
+    }
+    hr{
+        display: none;
+    }
+}
+
+/* tablet or medium devices */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+
+}
